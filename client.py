@@ -265,11 +265,14 @@ def draw_in_game_ui(game: Game):
     print_back_card(64, 6)
 
     # Player cards
-    cards_no = len(game.cards)
+    if len(game.cards) > 10:
+        show_cards = game.cards[:10]
+
+    cards_no = len(show_cards)
     x = int(65 / 2 - (cards_no * 5 + cards_no - 1) / 2) + 4
 
-    if game.cards[0]:
-        for i, card in enumerate(game.cards):
+    if show_cards[0]:
+        for i, card in enumerate(show_cards):
             if card[0] == 'C':
                 print_wild_card(x, 10, card[1])
             elif card[1] == 'S':
