@@ -4,11 +4,17 @@
 
 ### Screenshots
 
-![Screenshot 1](../assets/wait.png?raw=true)
+<p align="center">
+    <img src="../assets/wait.png?raw=true" alt="Screenshot 1" height="500" />
+</p>
 
-![Screenshot 2](../assets/player_turn.png?raw=true)
+<p align="center">
+    <img src="../assets/player_turn.png?raw=true" alt="Screenshot 2" height="500" />
+</p>
 
-![Screenshot 3](../assets/opponent_turn.png?raw=true)
+<p align="center">
+    <img src="../assets/opponent_turn.png?raw=true" alt="Screenshot 3" height="500" />
+</p>
 
 ### Notes
 
