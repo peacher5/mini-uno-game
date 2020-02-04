@@ -145,7 +145,11 @@ def clear_game_state(sharedData: SharedData):
 def draw_card(sharedData, index, amount):
     for i in range(amount):
         if len(sharedData.deck) == 0:
-            sharedData.deck = random.shuffle(sharedData.discard_pile[:-2])
+            discard_pile_without_action_card = sharedData.discard_pile[:-1]
+
+            random.shuffle(discard_pile_without_action_card)
+
+            sharedData.deck = discard_pile_without_action_card
             action_card = sharedData.discard_pile[-1]
             sharedData.discard_pile = [action_card]
 
