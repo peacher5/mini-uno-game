@@ -5,15 +5,15 @@
 ### Screenshots
 
 <p align="center">
-    <img src="../assets/wait.png?raw=true" alt="Screenshot 1" height="500" />
+    <img src="../assets/wait.png?raw=true" alt="Screenshot 1" height="360" />
 </p>
 
 <p align="center">
-    <img src="../assets/player_turn.png?raw=true" alt="Screenshot 2" height="500" />
+    <img src="../assets/player_turn.png?raw=true" alt="Screenshot 2" height="360" />
 </p>
 
 <p align="center">
-    <img src="../assets/opponent_turn.png?raw=true" alt="Screenshot 3" height="500" />
+    <img src="../assets/opponent_turn.png?raw=true" alt="Screenshot 3" height="360" />
 </p>
 
 ### Notes
