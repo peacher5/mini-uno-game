@@ -265,8 +265,7 @@ def draw_in_game_ui(game: Game):
     print_back_card(64, 6)
 
     # Player cards
-    if len(game.cards) > 10:
-        show_cards = game.cards[:10]
+    show_cards = game.cards[:10]
 
     cards_no = len(show_cards)
     x = int(65 / 2 - (cards_no * 5 + cards_no - 1) / 2) + 4
