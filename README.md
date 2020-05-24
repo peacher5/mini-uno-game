@@ -19,7 +19,7 @@
 ### Notes
 
 - Python 3.6+ is required
-- Minimum ternimal size is 73x19
+- Minimum terminal size is 73x19
 - Tested on macOS Catalina (iTerm) & Windows 10 (CMD, PowerShell)
 
 ### Starting a server
