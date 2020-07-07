@@ -157,10 +157,14 @@ def draw_card(sharedData, index, amount):
         sharedData.players[index].in_hand.append(top_deck)
 
 
-def can_play_card(card1, card2):
-    color1, number1 = card1
-    color2, number2 = card2
-    return color1 == color2 or number1 == number2 or color1 == 'C' or color2 == 'C'
+def can_play_card(playing_card, action_card, current_color):
+    playing_card_color, playing_card_number = playing_card
+    action_card_color, action_card_number = action_card
+
+    if action_card_color == 'C':
+        return playing_card_color == current_color
+
+    return playing_card_color == action_card_color or playing_card_number == action_card_number or playing_card_color == 'C'
 
 
 def handle_client(client_socket: socket, address_info, client_no, sharedData: SharedData):
@@ -276,7 +280,7 @@ def handle_client(client_socket: socket, address_info, client_no, sharedData: Sh
 
                     card = sharedData.players[player_index].in_hand[card_index]
 
-                    if not can_play_card(card, action_card):
+                    if not can_play_card(card, action_card, current_color):
                         send(client_socket, Response.Error.CANNOT_PLAY_THIS_CARD, client_no)
                         continue
 
