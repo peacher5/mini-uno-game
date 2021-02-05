@@ -247,7 +247,9 @@ def draw_in_game_ui(game: Game):
     # Opponent cards
     x = int(65 / 2 - (game.opponent_cards_no * 5 + game.opponent_cards_no - 1) / 2) + 4
 
-    for i in range(game.opponent_cards_no):
+    opponent_show_card_no = min(game.opponent_cards_no, 10)
+
+    for _ in range(opponent_show_card_no):
         print_back_card(x, 2)
         x += 6
 
