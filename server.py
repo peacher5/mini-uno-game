@@ -162,7 +162,7 @@ def can_play_card(playing_card, action_card, current_color):
     action_card_color, action_card_number = action_card
 
     if action_card_color == 'C':
-        return playing_card_color == current_color
+        return True
 
     return playing_card_color == action_card_color or playing_card_number == action_card_number or playing_card_color == 'C'
 
